@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 public class ContactManager implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
 	private List<Contact> contacts = new ArrayList<>();
 
 	public ContactManager() {}

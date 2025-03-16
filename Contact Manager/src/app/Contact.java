@@ -1,6 +1,10 @@
 package app;
 
-public class Contact {
+import java.io.Serializable;
+
+public class Contact implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private String nom;
 	private String prenom;
 	private String telephone;
