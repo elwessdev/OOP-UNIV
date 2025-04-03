@@ -8,8 +8,10 @@ public class MakeSerialization {
 	private final static String filePath = "ContactManager.ser";
 	private ContactManager CM;
 	
-	public MakeSerialization(ContactManager Cm) {
-		this.CM = Cm;
+	public MakeSerialization() {}
+	
+	public void setContactManager(ContactManager CM) {
+		this.CM = CM;
 	}
 	
 	public void serialization(){
@@ -30,9 +32,9 @@ public class MakeSerialization {
 				ObjectInputStream obj = new ObjectInputStream(f);
 		) {
 			return (ContactManager) obj.readObject();
-		} catch(IOException e) {
+		} catch(IOException | NullPointerException e) {
 			System.out.println(e.getMessage());
+			return new ContactManager();
 		}
-		return null;
 	}
 }

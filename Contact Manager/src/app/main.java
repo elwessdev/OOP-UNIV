@@ -3,13 +3,14 @@ package app;
 import java.util.Scanner;
 
 public class main {
-	public static void main(String args[]) {
+	public static void main(String args[]) throws ClassNotFoundException {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		ContactManager contactManager = new ContactManager();
+		MakeSerialization CMS = new MakeSerialization();
+		ContactManager contactManager = CMS.deserialization();
+		CMS.setContactManager(contactManager);
 		
-		MakeSerialization CMS = new MakeSerialization(contactManager);
 		
 		while(true) {
 			System.out.println("Hello to Contact Manager");
