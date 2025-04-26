@@ -1,3 +1,9 @@
+/*
+ * Author: Osama benali AKA elwess
+ * Date: April 26, 2025
+ * Description: Cinema Reservation System [TP-Connexion-BD]
+*/
+
 package main;
 
 import java.sql.SQLException;
