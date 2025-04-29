@@ -52,7 +52,7 @@ public class Pratiquons_Partie1 extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		JFrame window = new Pratiquons();
+		JFrame window = new Pratiquons_Partie1();
 		window.setLocationRelativeTo(null);
 		window.setVisible(true);
 	}
