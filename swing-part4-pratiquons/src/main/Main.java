@@ -40,6 +40,9 @@ public class Main extends JFrame {
         
         listStudent = new JTextArea();
         
+        listStudent.setEnabled(false);
+        listStudent.setDisabledTextColor(Color.BLUE);
+        
         students = new ArrayList<>();
         
         add.addActionListener(new ActionListener() {
