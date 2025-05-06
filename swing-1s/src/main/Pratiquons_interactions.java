@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+
 public class Pratiquons_interactions {
 	public static void main(String[] args) {
         Frame fenetre = new Frame("Formulaire de contact");
